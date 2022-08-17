@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --white: hsl(0, 0%, 100%);
+    --Red-hat-display: 'Red Hat Display', sans-serif;
+}
+
+*{box-sizing: border-box; margin: 0; padding: 0; font-family: var(--Red-hat-display);}
+.attribution {position:fixed; bottom:0;margin-bottom: 15px; font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-image:url(./images/pattern-background-mobile.svg) !important;
+    }
+}
+
+body{
+    background-image:url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--Pale-blue);
+}
+
+.card{
+    background-color: white;
+    margin: 1em;
+    border-radius: 1em;
+    max-width: 400px;
+    z-index: 1;
+    box-shadow: rgba(18, 30, 136, 0.15) 0px 20px 30px;
+}
+
+.img{
+    background-image: url("./images/illustration-hero.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    border-radius: 1em 1em 0 0;
+}
+
+.plan-card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+    align-items: center;
+    background-color: var(--Very-pale-blue);
+    border-radius: .7em;
+    padding: 1.3em;
+}
+
+.info{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2.3em;
+}
+
+h1{
+    font-size: 20pt;
+    font-weight: 900;
+    margin-top: 10px;
+}
+
+p{
+    font-size: 11pt;
+    font-weight: 500;
+    margin: 15px 15px;
+    color: var(--Desaturated-blue);
+    line-height: 27px;
+}
+
+.music-icon{
+    height: 45px;
+}
+
+.price{
+    text-align: left;
+}
+
+.plan{
+    font-weight: 900;
+    font-size: 11pt;
+}
+.plan-price{
+    color: var(--Desaturated-blue);
+    font-size: 11pt;
+    margin-top: 4px;
+}
+
+.col{
+    display: flex;
+    gap: 18px;
+}
+
+.plan-card .btn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--Bright-blue);
+    font-weight: 900;
+    font-size: 10pt;
+}
+
+.btn-primary{
+    cursor: pointer;
+    color: white;
+    border: none;
+    margin: 25px 0;
+    width: 100%;
+    padding: 15px 0;
+    border-radius: .7em;
+    background-color: var(--Bright-blue);
+    font-weight: 900;
+    box-shadow: rgba(18, 30, 136, 0.205) 0px 20px 30px;
+    
+}
+
+
+.btn-primary:hover,.btn:hover{
+    opacity: 0.8;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn{
+    color: var(--Desaturated-blue);
+    font-size: 10.5pt;
+    text-decoration: none;
+    font-weight: 900;
+    margin: 10px 0;
+}
+
+#cancel-btn:hover{
+    opacity: 1;
+    color: crimson;
+    transition: 0.3s ease;
+
+}
